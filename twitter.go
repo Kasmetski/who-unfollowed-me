@@ -42,7 +42,7 @@ func WhoUnfollowedMe(timer time.Duration, v url.Values) {
 		}
 
 		followers = newList
-		log.Printf("Job is done. Time for sleep until next scan: %v hours", timer)
+		log.Printf("Job is done. Time for sleep until next scan: %v minutes", timer)
 		time.Sleep(timer * time.Minute)
 	}
 
